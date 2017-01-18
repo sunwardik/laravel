@@ -1,0 +1,146 @@
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+background-color: #fff;
+color: #5ed9e8;
+cursor: pointer;
+font-size: 0;
+height: 40px;
+padding: 10px;
+position: absolute;
+text-align: center;
+top: 45%;
+transition:all 0.9s ease 0s;
+width: 40px;
+z-index: 9;
+}
+.slider-items .nivo-prevNav::after {
+    content: "\f177";
+    font-family: fontawesome;
+    font-size: 15px;
+    left: 12px;
+    position: absolute;
+    top:11px;
+}
+
+.slider-items .nivo-nextNav::after {
+    content: "\f178";
+    font-family: fontawesome;
+    font-size: 15px;
+    left: 12px;
+    position: absolute;
+    top:10px;
+}
+.nivo-directionNav a:hover {
+background-color: #5ed9e8;
+border-color: #5ed9e8;
+transition:all 0.5s ease 0s;
+color:#fff;
+}
+.nivo-prevNav {
+	left:40px;
+}
+.nivo-nextNav {
+	right:40px;
+}
+
+/* Caption styles */
+.nivo-caption {
+    background: transparent;
+    bottom: 0;
+    box-sizing: border-box;
+    color: #fff;
+    display: none;
+    left: 0;
+    overflow: hidden;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+    display: none
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+}

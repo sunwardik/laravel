@@ -1,0 +1,147 @@
+/*------------------------------
+    Portfolio animation code
+*/
+.portfolio-content {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.portfolio-content:hover, .portfolio-content:focus, .portfolio-content:active {
+  -webkit-animation-name: portfolio-content;
+  animation-name: portfolio-content;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background: rgba(7, 7, 7, 0.70);
+  background:rgba(7, 7, 7, 0.70);
+  color: white;
+}
+
+/*------------------------------
+            Team animation code
+------------------------------*/
+/* Shutter Out Vertical */
+.team-hover-item {
+background: rgba(0, 0, 0, 0.58);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.team-hover-item:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+   background: rgba(0, 0, 0, 0.58);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.team-hover-item:hover, .team-hover-item:focus, .team-hover-item:active {
+  color: white;
+}
+.team-hover-item:hover:before, .team-hover-item:focus:before, .team-hover-item:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+.team-title {
+    bottom:0;
+}
+.team-hover-item:hover .team-title {
+    bottom: 100px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.team-sub-title {
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: -51px !important;
+}
+
+.team-hover-item:hover .team-sub-title {
+   bottom: 50px!important;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+
+
+
+
+
+
+
+.team-hover-item:hover .team-submit {
+    margin-top: 0px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.team-icon-1 {
+  left: -44px;
+  position: absolute;
+    opacity: 0;
+}
+.team-hover-item:hover .team-icon-1 {
+left: 66px;
+opacity: 1;
+}
+.team-icon-2 {
+  top: -44px;
+  position: absolute;
+    opacity: 0;
+}
+.team-hover-item:hover .team-icon-2 {
+left: 111px;
+opacity: 1;
+top: 97px;
+}
+.team-icon-3 {
+  right: -44px;
+  position: absolute;
+    opacity: 0;
+}
+.team-hover-item:hover .team-icon-3 {
+opacity: 1;
+right: 72px;
+}
