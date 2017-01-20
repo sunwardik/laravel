@@ -14,4 +14,9 @@ Route::get('user/{id}',fuction($id=1){
 	return $id;
 )}->where('id','[0-9]+');
 */
+Route::get('insert/{n}', 'BaseController@getInsert');
 Route::get('/','BaseController@getIndex');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
